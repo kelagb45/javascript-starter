@@ -4,6 +4,13 @@
   --color-accent: #ec3000;
   --color-heading: #1b0760;
   --color-body: #918ca4;
+  --color-border: #ccc;
+  --border-radius: 30px;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 /*Typography*/
 html {
@@ -108,31 +115,99 @@ a {
   list-style-image: url(../images/tick.svg);
   padding-left: 3rem;
 }
-.list--tick .list__item{
-    padding-left: 0.5rem;
-    margin: 1rem;
+.list--tick .list__item {
+  padding-left: 0.5rem;
+  margin: 1rem;
 }
 @media screen and (min-width: 1024px) {
-    .list--tick .list__iem{
-        padding-left: 0;
-    }
-    
+  .list--tick .list__iem {
+    padding-left: 0;
+  }
 }
-/*icons*/ 
-.icon{
-    width: 40px;
-     height: 40px;
+/*icons*/
+.icon {
+  width: 40px;
+  height: 40px;
 }
-.icon--primary{
-    fill: var(--color-primary); 
+.icon--primary {
+  fill: var(--color-primary);
 }
-.icon-container{
-    background: #f3f9fa;
-    width: 64px;
-    height: 64px;
-    border-radius: 100%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-
+.icon-container {
+  background: #f3f9fa;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+/*buttons*/
+.accent__button {
+  background-color: var(--color-accent);
+  color: #ffffff;
+}
+button {
+  cursor: pointer;
+  font-weight: 600;
+  margin: 1rem 0;
+  font-size: 1.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 40px;
+  border-width: 0px;
+  outline: 0px;
+  padding: 2rem 4vw;
+  white-space: nowrap;
+}
+.start--secondary {
+  background-color: var(--color-secondary);
+  color: #ffffff;
+}
+.block--button {
+  color: var(--color-heading);
+  border: 2px solid var(--color-heading);
+  background-color: #ffffff;
+  width: 100%;
+  display: inline-block;
+}
+.block--button:hover {
+  background: var(--color-heading);
+  color: #fff;
+  transition: ease-in-out;
+}
+@media screen and (min-width: 1024px) {
+  button {
+    font-size: 1.5rem;
+  }
+}
+/*input*/
+.input {
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
+  color: var(--color-heading);
+  font-size: 2rem;
+  outline: 0;
+  padding: 1.5rem 3.5rem;
+}
+::placeholder {
+  color: #cdcbd7;
+}
+.input-group {
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  display: flex;
+}
+.input-group .input {
+  border: 0;
+  flex-grow: 1;
+  padding: 1.5rem 1rem;
+}
+.input-group,
+button {
+  margin: 4px;
+}
+@media screen and (min-width: 1024px) {
+  .input {
+    font-size: 1.5rem;
+  }
 }
