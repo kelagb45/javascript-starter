@@ -185,8 +185,8 @@ a {
   vertical-align: middle;
 }
 .btn--stretched {
-  padding-left: 6rem;
-  padding-right: 6rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
 }
 .start--secondary {
   background-color: var(--color-secondary);
@@ -431,6 +431,7 @@ a {
 .callout .btn {
   justify-self: center;
   align-self: center;
+  margin-top: 3rem;
 }
 .callout__content {
   text-align: center;
@@ -612,7 +613,6 @@ a {
 /*Feature*/
 .feature {
   gap: 4rem 2rem;
-  margin: 12rem;
 }
 
 .feature:first-of-type {
