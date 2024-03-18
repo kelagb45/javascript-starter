@@ -431,6 +431,7 @@ a {
 .callout .btn {
   justify-self: center;
   align-self: center;
+  margin-top: 3rem;
 }
 .callout__content {
   text-align: center;
